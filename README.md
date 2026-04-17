@@ -1,4 +1,10 @@
-# keybindz
+# MangoWM Keybind
+
+
+Making life easier?
+
+written in C++
+
 
 A minimal GUI for managing MangoWM keybindings without editing config files by hand.
 
@@ -19,8 +25,11 @@ sudo pacman -S gtk3 wayland wayland-protocols wayland-utils base-devel
 
 ## Build
 
+- First make clean the binary us already compiled here.
+
 ```bash
 cd ~/Projects/keybindz
+make clean
 make
 ```
 
@@ -92,7 +101,7 @@ without triggering WM actions.
 Add the following line to `~/.config/mango/config.conf` (or `bind.conf`):
 
 ```
-include ~/.config/mango/keybindz.conf
+source ~/.config/mango/keybindz.conf
 ```
 
 Then reload MangoWM:
